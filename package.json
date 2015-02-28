@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:sonewman/route-react.git"
+    "url": "git@github.com:sonewman/reactr.git"
   },
   "keywords": [
     "react",
@@ -21,9 +21,9 @@
   "author": "Sam Newman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sonewman/route-react/issues"
+    "url": "https://github.com/sonewman/reactr/issues"
   },
-  "homepage": "https://github.com/sonewman/route-react",
+  "homepage": "https://github.com/sonewman/reactr",
   "devDependencies": {
     "browserify-jsx": "^1.0.0",
     "chai": "^1.10.0",
