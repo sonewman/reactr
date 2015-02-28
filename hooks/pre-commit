@@ -1,0 +1,9 @@
+!#/bin/sh
+
+JS_TO_COMMIT=$(git diff --cached --name-only --diff-filter=ACM | grep '.js$')
+
+if [ $JS_TO_COMMIT >/dev/null 2>&1 ]; then
+  npm run jsxhint -- $JS_TO_COMMIT && npm test
+fi
+
+exit $?

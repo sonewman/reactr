@@ -1,0 +1,9 @@
+{
+  "name": "reactr-example",
+  "dependencies": {
+    "express": "^4.11.2"
+  },
+  "devDependencies": {
+    "react": "^0.12.2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "asi": true
+  , "laxcomma": true
+  , "laxbreak": true
+  , "expr": true
+  , "unused": true
+  , "esnext": true
+}

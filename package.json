@@ -4,7 +4,10 @@
   "description": "react router",
   "main": "reactr.js",
   "scripts": {
+    "hooks": "chmod +x hooks/*; cd .git/hooks && ln -sf ../../hooks/* .",
+    "postinstall": "npm run hooks",
     "test": "npm run mocha && npm run karma",
+    "jsxhint": "jsxhint",
     "mocha": "mocha --compilers js:jsx.js --recursive test/",
     "karma": "karma start karma.conf.js",
     "karma_dev": "karma start dev.conf.js /Users/sam/code/reactr/test/"
@@ -40,6 +43,7 @@
   },
   "dependencies": {
     "debug": "^2.1.1",
+    "jsxhint": "^0.12.1",
     "path-to-regexp": "^1.0.3",
     "qs": "^2.3.3",
     "reactify": "^1.0.0"

@@ -53,9 +53,8 @@ describe('Router - dual routers', function () {
   })
 
   it('should allow two routers to exist and respond accordingly', function (done) {
-
     var router1Count = 0
-    this.router1.run(function (Handler, state) {
+    this.router1.run(function (Handler) {
       if (++router1Count === 1) {
         var $ = testUtils.render(<Handler />)
         $('h1').text().should.equal('hello!')
@@ -63,7 +62,7 @@ describe('Router - dual routers', function () {
     })
 
     var router2Count = 0
-    this.router2.run(function (Handler, state) {
+    this.router2.run(function (Handler) {
       if (++router2Count === 2) {
         var $ = testUtils.render(<Handler />)
         $('h1').text().should.equal('howdy!')
