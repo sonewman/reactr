@@ -1,0 +1,4 @@
+{
+  "main": "./server-nav.js",
+  "browser": "./client-nav.js"
+}

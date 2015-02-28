@@ -1,0 +1,51 @@
+{
+  "name": "reactr",
+  "version": "0.0.0",
+  "description": "react router",
+  "main": "reactr.js",
+  "scripts": {
+    "test": "npm run mocha && npm run karma",
+    "mocha": "mocha --compilers js:jsx.js --recursive test/",
+    "karma": "karma start karma.conf.js",
+    "karma_dev": "karma start dev.conf.js /Users/sam/code/reactr/test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sonewman/route-react.git"
+  },
+  "keywords": [
+    "react",
+    "route",
+    "router"
+  ],
+  "author": "Sam Newman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sonewman/route-react/issues"
+  },
+  "homepage": "https://github.com/sonewman/route-react",
+  "devDependencies": {
+    "browserify-jsx": "^1.0.0",
+    "chai": "^1.10.0",
+    "cheerio": "^0.18.0",
+    "karma": "^0.12.31",
+    "karma-browserify": "^3.0.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-mocha": "^0.1.10",
+    "mocha": "^2.1.0",
+    "react": "^0.12.2",
+    "react-tools": "^0.12.2",
+    "should": "^4.6.5"
+  },
+  "dependencies": {
+    "debug": "^2.1.1",
+    "path-to-regexp": "^1.0.3",
+    "qs": "^2.3.3",
+    "reactify": "^1.0.0"
+  },
+  "peerDependencies": {
+    "react": "^0.12.2"
+  },
+  "browser": {}
+}
