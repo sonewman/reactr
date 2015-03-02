@@ -2,7 +2,7 @@
 
 Routing for React JS
 
-## v0.2.0
+## v0.3.0
 
 It's worth mentioning that this project is very much in it's infant stages, please come back soon for more documentation and features :)
 
