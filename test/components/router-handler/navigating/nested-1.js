@@ -1,9 +1,9 @@
 var React = require('react')
-var Router = require('../../../')
+var Router = require('../../../../')
 var Route = Router.Route
 var RouteHandler = Router.RouteHandler
 
-var testUtils = require('../../../test-utils')
+var testUtils = require('../../../../test-utils')
 require('should')
 
 var Root = React.createClass({

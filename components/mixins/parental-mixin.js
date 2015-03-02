@@ -1,11 +1,25 @@
 var React = require('react')
+var debug = require('debug')('reactr')
+
+function createGetNode(handler) {
+  return function getNode() {
+    return handler.currentNode
+  }
+}
 
 module.exports = {
   contextTypes: {
-    childRouteHandlers: React.PropTypes.array.isRequired
+    getRouteNode: React.PropTypes.func,
+    rootNode: React.PropTypes.object
   },
-  getHandle: function () {
-    console.log(this.context.childRouteHandlers)
-    return <h1>hey</h1>
+
+  childContextTypes: {
+    getRouteNode: React.PropTypes.func,
+    rootNode: React.PropTypes.object
+  },
+
+  getChildContext() {
+    debug('RouteHandler:getChildContext')
+    return { getRouteNode: createGetNode(this) }
   }
 }
