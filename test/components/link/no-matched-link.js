@@ -14,7 +14,10 @@ var Root = React.createClass({
     return (
       <div>
         <nav>
+<<<<<<< HEAD
           <Link to='child1'>Child One</Link>
+=======
+>>>>>>> added link comp and more robust matching
           <Link to='child2'>Child Two</Link>
         </nav>
         <section>
@@ -31,7 +34,7 @@ var Child1 = React.createClass({
   }
 })
 
-describe('Router.Link happy path, matching links', function () {
+describe('Router.Link no matched link', function () {
   beforeEach(function () {
     Router.navigate('/preset')
 
@@ -51,9 +54,9 @@ describe('Router.Link happy path, matching links', function () {
     this.router.run(function (Handler) {
       var $ = testUtils.render(<Handler />)
 
-      var firstLink = $('nav a:first-child')
-      firstLink.text().should.equal('Child One')
-      firstLink.attr('href').should.equal('')
+      var link = $('nav a:first-child')
+      link.text().should.equal('Child Two')
+      link.attr('href').should.equal('')
 
       done()
     })

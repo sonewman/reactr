@@ -15,7 +15,7 @@ var Root = React.createClass({
       <div>
         <nav>
           <Link to='child1'>Child One</Link>
-          <Link to='child2'>Child Two</Link>
+          <Link to='parent2.child2'>Child Two</Link>
         </nav>
         <section>
           <RouteHandler />
@@ -66,7 +66,7 @@ describe('Router.Link happy path, matching links', function () {
 
       var secondLink = $('nav a:nth-child(2)')
       secondLink.text().should.equal('Child Two')
-      secondLink.attr('href').should.equal('/page2')
+      secondLink.attr('href').should.equal('/page2/child')
 
       done()
     })

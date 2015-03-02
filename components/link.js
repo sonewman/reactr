@@ -24,7 +24,7 @@ var Link = React.createClass({
 
     var l = nodePath.length
     for (var i = 0; i < l; i += 1)
-      node = node.getNamedFromAll(nodePath[i])
+      node = node.getRouteNamed(nodePath[i])
 
     var attrs = {
       href: (node && node.path) || ''

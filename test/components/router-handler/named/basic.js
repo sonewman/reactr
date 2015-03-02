@@ -1,7 +1,7 @@
 var React = require('react')
 var {
-  Router, 
-  Route, 
+  Router,
+  Route,
   RouteHandler
 } = require('../../../../')
 
@@ -36,7 +36,7 @@ var Root = React.createClass({
 describe('Router - named handler routes', function () {
   beforeEach(function () {
     Router.navigate('/')
-    
+
     this.router = new Router(
       <Route path='/home' handler={Root}>
         <Route name='child1' handler={Child1} />

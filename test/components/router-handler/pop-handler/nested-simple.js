@@ -5,7 +5,7 @@ var RouteHandler = Router.RouteHandler
 
 var testUtils = require('../../../../test-utils')
 require('should')
-    
+
 var TestHandle2 = React.createClass({
   render: function () {
     return (
