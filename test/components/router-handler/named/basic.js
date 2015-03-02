@@ -3,9 +3,9 @@ var {
   Router, 
   Route, 
   RouteHandler
-} = require('../../../')
+} = require('../../../../')
 
-var testUtils = require('../../../test-utils')
+var testUtils = require('../../../../test-utils')
 require('should')
 
 var Child1 = React.createClass({
