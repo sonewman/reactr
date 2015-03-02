@@ -14,10 +14,6 @@ var Root = React.createClass({
     return (
       <div>
         <nav>
-<<<<<<< HEAD
-          <Link to='child1'>Child One</Link>
-=======
->>>>>>> added link comp and more robust matching
           <Link to='child2'>Child Two</Link>
         </nav>
         <section>

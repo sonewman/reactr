@@ -1,7 +1,13 @@
 {
   "name": "reactr-example",
+  "scripts": {
+    "start": "babel-node ."
+  },
   "dependencies": {
-    "express": "^4.11.2"
+    "babel": "^4.6.1",
+    "babelify": "^5.0.3",
+    "express": "^4.11.2",
+    "express-destiny": "^3.1.0"
   },
   "devDependencies": {
     "react": "^0.12.2"
